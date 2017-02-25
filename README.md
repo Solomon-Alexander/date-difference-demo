@@ -43,8 +43,11 @@ proper test doubles in my tests
 than 10.
 8. Does not need to be aware of leap years (February 29th is never valid, years always 365 days long)
 
+Prerequisites:
+1. Install JDK 8.
+2. Install Maven 3.3.9.
 
-INSTRUCTIONS
+INSTRUCTIONS to build and run:
     To build the application, run all tests, and install jar, run "mvn clean install" in the root directory
     To run the application, run "java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar 'DD MM YYYY, DD MM YYYY'" from the root
     of the project
