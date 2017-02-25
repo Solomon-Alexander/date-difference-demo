@@ -1,29 +1,13 @@
 package com.demo.date.validator;
 
 import static java.lang.String.format;
-
 import java.util.regex.Pattern;
-
-import com.demo.date.constants.DateConstants;
-
 import com.demo.date.domain.Month;
 
 public class DateValidator {
 	
 	private static final Pattern CORRECT_FORMAT = Pattern.compile("\\d\\d \\d\\d \\d\\d\\d\\d");
-	
-    public static boolean isLeapYear(int year) {
-        if (year % 100 == 0) {
-            if (year % 400 == 0) {
-                return true;
-            }
-        } else if (year % 4 == 0) {
-            return true;
-        }
-
-        return false;
-    }
-    
+	 
     public static String validated(String date) {
         if (isNull(date) || !isCorrectlyFormatted(date)) {
             throw new IllegalArgumentException(String.format("Expected to be of form '00 00 0000', found '%s'", date));

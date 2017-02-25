@@ -1,5 +1,4 @@
 com\demo\date\presentation\ArgumentParser.class
-com\demo\date\constants\DateConstants.class
 com\demo\date\parser\DateParser.class
 com\demo\date\factory\DateFactory.class
 com\demo\date\validator\DateValidator.class
