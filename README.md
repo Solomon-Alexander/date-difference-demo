@@ -37,9 +37,10 @@ strings/edge case formatting (e.g. "No difference") required.
 than 10.
 8. Does not need to be aware of leap years (February 29th is never valid, years always 365 days long)
 
-Prerequisites:
-1. Install Java 8.
-2. Install Maven 3.3.9.
+Prerequisites
+
+1. Install Java 8
+2. Install Maven 3.3.9
 
 INSTRUCTIONS to build and run:
     To build the application, run all tests, and install jar, run "mvn clean install" 
