@@ -42,10 +42,12 @@ Prerequisites:
 2. Install Maven 3.3.9.
 
 INSTRUCTIONS to build and run:
-    To build the application, run all tests, and install jar, run "mvn clean install" in the root directory.
+    To build the application, run all tests, and install jar, run "mvn clean install" 
+    in the root directory.
 
-    To run the application, run "java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar 'DD MM YYYY,DD MM YYYY'" from the root
-    of the project
+    To run the application, run the following:
+    java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar "DD MM YYYY,DD MM YYYY" from the 
+    root of the project
 
     Some Sample input/output:
     1)Input: java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar "05 02 2010,07 02 2010"
