@@ -42,15 +42,17 @@ Prerequisites:
 2. Install Maven 3.3.9.
 
 INSTRUCTIONS to build and run:
-    To build the application, run all tests, and install jar, run "mvn clean install" in the root directory
-    To run the application, run "java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar 'DD MM YYYY, DD MM YYYY'" from the root
+    To build the application, run all tests, and install jar, run "mvn clean install" in the root directory.
+
+    To run the application, run "java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar 'DD MM YYYY,DD MM YYYY'" from the root
     of the project
+
     Some Sample input/output:
     1)Input: java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar "05 02 2010,07 02 2010"
-    Output: 05 02 2010, 07 02 2010, 2
+      Output: 05 02 2010, 07 02 2010, 2
 
     2)Input: java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar "05 02 2010,07 02 2011"
-    Output: Exception in thread "main" java.lang.IllegalArgumentException: Expected year to fall within range 1900-2010, found '2011'
+      Output: Exception in thread "main" java.lang.IllegalArgumentException: Expected year to fall within range 1900-2010, found '2011'
         at com.demo.date.validator.DateValidator.validatedYear(DateValidator.java:43)
         at com.demo.date.factory.DateFactory.createWith(DateFactory.java:11)
         at com.demo.date.parser.DateParser.parse(DateParser.java:23)
@@ -59,7 +61,7 @@ INSTRUCTIONS to build and run:
 
     3)Input: java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar "05 02 2010,07 22 2010"
 
-    Output:Exception in thread "main" java.lang.IllegalArgumentException: Expected month to fall within range 1-12, found '22'
+      Output:Exception in thread "main" java.lang.IllegalArgumentException: Expected month to fall within range 1-12, found '22'
         at com.demo.date.validator.DateValidator.validatedMonth(DateValidator.java:36)
         at com.demo.date.factory.DateFactory.createWith(DateFactory.java:10)
         at com.demo.date.parser.DateParser.parse(DateParser.java:23)
@@ -68,7 +70,7 @@ INSTRUCTIONS to build and run:
 
     4)Input: java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar "05 02 2010,77 02 2010"
 
-    Output: Exception in thread "main" java.lang.IllegalArgumentException: Expected day to fall within the range specified by month FEBRUARY (1-28), found '77'
+      Output: Exception in thread "main" java.lang.IllegalArgumentException: Expected day to fall within the range specified by month FEBRUARY (1-28), found '77'
         at com.demo.date.validator.DateValidator.validatedDayInMonth(DateValidator.java:28)
         at com.demo.date.factory.DateFactory.createWith(DateFactory.java:11)
         at com.demo.date.parser.DateParser.parse(DateParser.java:23)
