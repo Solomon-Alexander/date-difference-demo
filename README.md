@@ -41,10 +41,15 @@ Prerequisites
 
 1. Install Java 8
 2. Install Maven 3.3.9
+3. Install Git
 
-INSTRUCTIONS to build and run:
-    To build the application, run all tests, and install jar, run "mvn clean install" 
-    in the root directory.
+INSTRUCTIONS to clone repo, build and run:
+
+    To Clone the date-difference-demo repository, 
+    run "git clone https://github.com/Solomon-Alexander/date-difference-demo.git"
+
+    To build the application, run all tests, and install jar, 
+    run "mvn clean install" in the root directory.
 
     To run the application, run the following:
     java -jar target/date-difference-demo-0.0.1-SNAPSHOT.jar "DD MM YYYY,DD MM YYYY" from the 
